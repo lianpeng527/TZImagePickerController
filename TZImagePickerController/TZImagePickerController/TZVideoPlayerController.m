@@ -51,6 +51,10 @@
     if (tzImagePickerVc) {
         self.navigationItem.title = tzImagePickerVc.previewBtnTitleStr;
     }
+    
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+
+
     [self configMoviePlayer];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pausePlayerAndShowNaviBar) name:UIApplicationWillResignActiveNotification object:nil];
 }
